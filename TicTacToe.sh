@@ -265,8 +265,7 @@ function playGame() {
 				#If computer gets the second turn and only one cell filled
 				if [ $filledCells -eq 1 ]
 				then
-					if [[ "${matrix[0,0]}" =  "$userChar" || "${matrix[0,2]}" =  "$userChar"
-							|| "${matrix[2,0]}" =  "$userChar" || "${matrix[2,2]}" =  "$userChar" ]]
+					if [[ "${matrix[1,1]}" =  " " ]]
 					then	#If user puts at corner then put computer puts at centre
 						fillCell 1 1 $compChar
 						continue
